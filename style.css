@@ -1,0 +1,59 @@
+/* Basic CSS for the calculator */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .display {
+    background-color: #000;
+    color: #00ff00;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 60px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 10px;
+  }
+  
+  .btn {
+    background-color: #555;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: #777;
+  }
+  
+  #equals {
+    grid-column: span 4;
+    background-color: #0d6efd;
+  }
+  
+  #clear {
+    background-color: #ff0000;
+  }
+  
